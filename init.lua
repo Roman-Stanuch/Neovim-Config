@@ -240,7 +240,12 @@ require('lazy').setup({
   -- keys can be used to configure plugin behavior/loading/etc.
   --
   -- Use `opts = {}` to automatically pass options to a plugin's `setup()` function, forcing the plugin to be loaded.
-  --
+
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+  },
 
   -- Alternatively, use `config = function() ... end` for full control over the configuration.
   -- If you prefer to call `setup` explicitly, use:
