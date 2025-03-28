@@ -368,7 +368,6 @@ require('lazy').setup {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua',
-        'black',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -406,7 +405,6 @@ require('lazy').setup {
       format_on_save = false,
       formatters_by_ft = {
         lua = { 'stylua' },
-        python = { 'black' },
         c = { 'clang-format' },
         cpp = { 'clang-format' },
       },
